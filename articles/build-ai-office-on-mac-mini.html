@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow,noarchive"><title>How to Build an AI Office on a Mac Mini — IronFrame Field Notes</title><meta name="description" content="Build a local-first AI office with clear approval gates and evidence loops."><style>
+:root{--bg:#08090a;--panel:#101113;--surface:rgba(255,255,255,.028);--line:rgba(255,255,255,.08);--text:#f7f8f8;--muted:#b9c0cc;--dim:#858b96;--brand:#5e6ad2;--brand2:#7170ff;--green:#10b981;--amber:#f59e0b;--red:#ef4444}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 12% 0%,rgba(94,106,210,.18),transparent 34%),var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;line-height:1.68;font-feature-settings:'cv01','ss03'}a{color:inherit}.wrap{max-width:1080px;margin:0 auto;padding:0 22px}.nav{height:64px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(8,9,10,.78);backdrop-filter:blur(16px);z-index:3}.nav a{text-decoration:none;color:#d0d6e0;font-size:14px;font-weight:510;margin-left:16px}.brand{font-weight:590;color:var(--text)}.hero{padding:76px 0 44px}h1{font-size:clamp(40px,7vw,74px);line-height:.98;letter-spacing:-1.4px;margin:12px 0 18px;font-weight:510}h2{font-size:32px;line-height:1.15;letter-spacing:-.6px;margin:42px 0 14px;font-weight:510}h3{font-size:22px;margin:28px 0 8px}p,li{color:var(--muted)}.sub{font-size:19px;max-width:760px;color:var(--muted)}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}.card h3{margin-top:0}.cta{display:inline-block;margin-top:18px;text-decoration:none;background:var(--brand);padding:11px 15px;border-radius:8px;color:white;font-weight:510}.ghost{display:inline-block;margin-top:18px;margin-left:8px;text-decoration:none;background:rgba(255,255,255,.03);border:1px solid var(--line);padding:10px 14px;border-radius:8px;color:#d0d6e0}.row{display:block;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;background:rgba(255,255,255,.02);margin:10px 0}.mono,code{font-family:'JetBrains Mono',ui-monospace,monospace}code{background:rgba(255,255,255,.055);padding:2px 5px;border-radius:5px;color:#e7e9ee}pre{background:#0f1011;border:1px solid var(--line);border-radius:14px;padding:16px;overflow:auto}article{max-width:820px}article h1{font-size:52px}.notice{border:1px solid rgba(94,106,210,.4);background:rgba(94,106,210,.1);padding:16px;border-radius:14px;color:#d0d6e0}.footer{border-top:1px solid var(--line);margin-top:64px;padding:30px 0;color:var(--dim);font-size:13px}@media(max-width:820px){.grid{grid-template-columns:1fr}.nav{position:static;height:auto;padding:16px 0;align-items:flex-start}.nav div:last-child{display:flex;flex-wrap:wrap;gap:8px}.nav a{margin:0}h1{font-size:40px}article h1{font-size:38px}}
+</style></head><body><header class="wrap nav"><a class="brand" href="../index.html">IronFrame Field Notes</a><div><a href="../articles/build-ai-office-on-mac-mini.html">Articles</a><a href="../templates/approval-gate-checklist.html">Checklist</a><a href="../products/ai-agent-approval-gates-starter-kit/">Starter Kit</a></div></header><main class="wrap"><article><h1>How to Build an AI Office on a Mac Mini</h1>
+<p>Category: AI Office Infrastructure</p>
+<p>Primary template CTA: the AI Agent Approval Gate Checklist.</p>
+<p>Approval boundary: publishing, screenshots, affiliate links, and external claims require operator approval.</p>
+<h2>The sober version</h2>
+<p>An AI office is not a magic business that runs itself. The useful version is an operating layer: a local machine, a repository of doctrine and tasks, scheduled briefs, approval gates, and agents that can prepare work without silently creating external risk.</p>
+<p>The Mac Mini is a good base because it can stay on, run local tools, hold a structured workspace, and expose a simple command surface through messaging. The important part is not the hardware. The important part is the operating discipline around it.</p>
+<h2>What the system should do</h2>
+<p>A practical AI office should be able to:</p>
+<ul>
+<li>receive a task through a controlled channel;</li>
+<li>find relevant local context;</li>
+<li>draft plans, briefs, articles, scripts, checklists and templates;</li>
+<li>run safe local commands and tests;</li>
+<li>maintain task records and decision logs;</li>
+<li>prepare content/product assets for approval;</li>
+<li>produce evidence paths before saying a task is complete.</li>
+</ul>
+<p>It should not silently:</p>
+<ul>
+<li>publish content;</li>
+<li>send outreach;</li>
+<li>spend money;</li>
+<li>broaden OAuth/API scopes;</li>
+<li>handle secrets in chat;</li>
+<li>delete important files;</li>
+<li>place trades or bets;</li>
+<li>make legal, tax, financial or security promises.</li>
+</ul>
+<p>That distinction is the difference between a useful AI office and autonomy theatre.</p>
+<h2>Reference stack</h2>
+<p>The stack IronFrame is using as its proof asset:</p>
+<ul>
+<li>Apple Silicon Mac Mini as always-on host;</li>
+<li>Hermes Agent as command layer;</li>
+<li>Telegram as controlled human interface;</li>
+<li>GitHub-backed repository as memory and doctrine spine;</li>
+<li>local search over curated docs;</li>
+<li>cron jobs for scheduled briefs;</li>
+<li>scripts for repeatable checks and evidence generation;</li>
+<li>explicit approval gates for external actions.</li>
+</ul>
+<p>This combination matters because it keeps the agent inside a structured workspace rather than letting it improvise across every available app.</p>
+<h2>Folder spine</h2>
+<p>A simple folder spine is enough to start:</p>
+<pre><code>/AI-Office
+  /decisions
+  /tasks
+  /research
+  /content
+  /templates
+  /scripts
+  /briefs
+  /logs
+  /approval-packets</code></pre>
+<p>Rules:</p>
+<ol>
+<li>Stable decisions go in decisions.</li>
+<li>Temporary progress goes in tasks/logs.</li>
+<li>Research keeps source links and confidence labels.</li>
+<li>Content is local draft until approval.</li>
+<li>Templates should be useful without a sales pitch.</li>
+<li>Scripts must have clear purpose and safe defaults.</li>
+<li>Approval packets list exactly what would become public or paid.</li>
+</ol>
+<h2>Approval gates</h2>
+<p>The first template in this hub is the Approval Gate Checklist because it is the control surface for everything else.</p>
+<p>Use it whenever the agent is about to touch:</p>
+<ul>
+<li>money;</li>
+<li>accounts;</li>
+<li>publishing;</li>
+<li>external messages;</li>
+<li>private data;</li>
+<li>credentials;</li>
+<li>irreversible deletes;</li>
+<li>financial or legal claims.</li>
+</ul>
+<p>The agent can prepare the work. The founder approves the exposure.</p>
+<h2>Evidence discipline</h2>
+<p>Every meaningful task should leave evidence:</p>
+<ul>
+<li>source file or URL;</li>
+<li>generated asset path;</li>
+<li>command/test result;</li>
+<li>changed files;</li>
+<li>blocked items;</li>
+<li>next gate.</li>
+</ul>
+<p>This is how the founder avoids trusting vague agent summaries.</p>
+<h2>First implementation path</h2>
+<p>If you were building this from scratch:</p>
+<ol>
+<li>Create the folder spine.</li>
+<li>Put decisions and tasks under Git.</li>
+<li>Add a single messaging interface.</li>
+<li>Add one daily brief.</li>
+<li>Add one content/research pipeline.</li>
+<li>Add approval gates before external integrations.</li>
+<li>Only then add more tools.</li>
+</ol>
+<p>Do not start by connecting every SaaS account. Start with one useful workflow that produces evidence.</p>
+<h2>Monetization path</h2>
+<p>This article can support low-interaction revenue without becoming spam:</p>
+<ul>
+<li>free approval-gate checklist;</li>
+<li>Mac Mini AI Office setup checklist;</li>
+<li>AI Office Operating Doctrine template;</li>
+<li>affiliate/tool links only after real testing and disclosure;</li>
+<li>longer YouTube walkthrough later;</li>
+<li>low-ticket starter kit after the templates are polished.</li>
+</ul>
+<h2>Download</h2>
+<p>Start with: <code>AI Agent Approval Gate Checklist</code>.</p></article></main><footer class="footer"><div class="wrap">Practical AI office systems. No email capture, no payment links, and no affiliate links in this preview.</div></footer></body></html>
