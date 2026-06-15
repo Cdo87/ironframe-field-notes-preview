@@ -1,0 +1,83 @@
+{
+  "customer_or_private_data_touched": false,
+  "dry_run_date": "2026-06-12",
+  "dry_run_email_stub": {
+    "disclaimer_included": true,
+    "download_or_attachment_route": "[approved platform download, success page, or manual attachment route after Mark verifies seller setup]",
+    "recipient": "[platform-provided buyer email after verified paid order only \u2014 not stored in Git]",
+    "send_status": "not_sent_dry_run_only",
+    "subject": "Your AI Agent Approval Gates Starter Kit",
+    "support_boundary_included": true
+  },
+  "external_actions": [],
+  "failures": [],
+  "generated_at": "2026-06-12T08:09:42",
+  "package": {
+    "actual_sha256": "01c29fa10b5eb9e76157a4663850b0adbfc4e7d9241195776a1fbc07b5f9e0ef",
+    "files": [
+      "CHANGELOG.md",
+      "LICENSE_AND_USE.md",
+      "README.md",
+      "START_HERE.md",
+      "agent-permission-matrix.md",
+      "agent-task-card-template.md",
+      "ai-agent-approval-gate-checklist.md",
+      "ai-agent-approval-gate-checklist.pdf",
+      "first-7-days-of-agent-delegation.md",
+      "founder-ai-autonomy-policy.md",
+      "risk-register-template.md"
+    ],
+    "manifest_file_count": 11,
+    "manifest_sha256": "01c29fa10b5eb9e76157a4663850b0adbfc4e7d9241195776a1fbc07b5f9e0ef",
+    "sha256_match": true,
+    "zip": "content/ironframe-field-notes/products/ai-agent-approval-gates-starter-kit/build/v0.2/ironframe-ai-agent-approval-gates-starter-kit-v0.2.zip",
+    "zip_file_count": 11
+  },
+  "payment_link_created": false,
+  "redacted_ledger_entry": {
+    "date": "2026-06-12",
+    "fulfilment_route": "manual/platform placeholder only",
+    "notes": "No buyer PII, receipt ID, transaction ID, checkout URL, or customer message stored.",
+    "package_hash_checked": true,
+    "payment_verified": "no \u2014 dry run only",
+    "platform": "dummy-local-only",
+    "price": "\u00a39 GBP launch hypothesis",
+    "product": "Approval Gates Starter Kit v0.2",
+    "sale_number": "DRY-RUN-0",
+    "support_issue_class": "none"
+  },
+  "remaining_blocker": "verified IronFrame-controlled Stripe/Polar checkout route plus Mark-side seller setup for password/2FA/KYC/banking/tax/terms/live-payment activation",
+  "sales_page_scan": {
+    "email_markers": [],
+    "live_payment_url_markers": [],
+    "secret_hint_markers": []
+  },
+  "scope": "local no-network Product Forge first-sale fulfilment dry-run",
+  "seller_platform_touched": false,
+  "status": "PASS",
+  "template_checks": {
+    "paths": {
+      "buyer_journey_qa": "content/ironframe-field-notes/products/ai-agent-approval-gates-starter-kit/listings/FIRST_PURCHASE_BUYER_JOURNEY_QA_2026-06-09.md",
+      "first_10_checklist": "content/ironframe-field-notes/products/ai-agent-approval-gates-starter-kit/listings/MANUAL_FIRST_10_SALES_FULFILMENT_CHECKLIST_2026-06-06.md",
+      "fulfilment_template": "content/ironframe-field-notes/products/ai-agent-approval-gates-starter-kit/listings/FIRST_SALE_FULFILMENT_EMAIL_AND_LEDGER_TEMPLATE_2026-06-09.md"
+    },
+    "scans": {
+      "buyer_journey_qa": {
+        "email_markers": [],
+        "live_payment_url_markers": [],
+        "secret_hint_markers": []
+      },
+      "first_10_checklist": {
+        "email_markers": [],
+        "live_payment_url_markers": [],
+        "secret_hint_markers": []
+      },
+      "fulfilment_template": {
+        "email_markers": [],
+        "live_payment_url_markers": [],
+        "secret_hint_markers": []
+      }
+    }
+  },
+  "warnings": []
+}
